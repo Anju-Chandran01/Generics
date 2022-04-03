@@ -2,21 +2,22 @@ package com.bridgelabz.generics;
 
 class GenericsTest {
 
-    private static Float a,b,c;
 
-    GenericsTest(Float a, Float b, Float c){
-        GenericsTest.a = a;
-        GenericsTest.b = b;
-        GenericsTest.c = c;
+    private static String a,b,c;
+
+    GenericsTest(String a, String b, String c){
+        this.a = a;
+        this.b = b;
+        this.c= c;
     }
 
     public void maximum() {
-        Float res=GenericsTest.findMaximum(a,b,c);
+        String res=GenericsTest.findMaximum(a,b,c);
         System.out.println("Maximum of "+a+", "+b+" and "+c+" is: " +res);
     }
 
-    public static Float findMaximum(Float a, Float b, Float c) {
-        Float max = a;
+    public static String findMaximum(String a, String b, String c) {
+        String max = a;
         if(b.compareTo(max) > 0) {
             max = b;
         }
