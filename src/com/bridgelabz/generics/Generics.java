@@ -1,30 +1,19 @@
 package com.bridgelabz.generics;
 
-import java.util.Scanner;
-
 public class Generics {
-
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Integer a1 = 30, b1 = 10, c1 = 20;
+        new GenericsTest(a1, b1, c1);
+        GenericsTest.maximum();
 
-        System.out.print("Enter 1st num:");
-        Integer x = sc.nextInt();
-        System.out.print("Enter 2nd num:");
-        Integer y = sc.nextInt();
-        System.out.print("Enter 3rd num:");
-        Integer z = sc.nextInt();
+        Integer a2 = 30, b2 = 50, c2 = 20;
+        new GenericsTest(a2, b2, c2);
+        GenericsTest.maximum();
 
-        Integer max;
-        if (x.compareTo(y) > 0) {
-            max = x;
-        } else {
-            max = y;
-        }
-        if (z.compareTo(max) > 0) {
-            max = z;
-        }
+        Integer a3 = 30, b3 = 10, c3 = 40;
+        new GenericsTest(a3, b3, c3);
+        GenericsTest.maximum();
 
-        System.out.println("Max number is " + max);
     }
 }
