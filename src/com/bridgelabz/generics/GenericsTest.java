@@ -1,7 +1,6 @@
 package com.bridgelabz.generics;
 
     public class GenericsTest <T extends Comparable<T>> {
-
         private T a,b,c,d;
 
         //constructor with generic
